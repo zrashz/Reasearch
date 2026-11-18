@@ -1,0 +1,3 @@
+# Not an installable requirements file.
+# Exact transformer, embedding, vision and verification stacks are NOT selected.
+# Record tested versions after a development-only compatibility pilot.

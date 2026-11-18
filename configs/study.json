@@ -1,0 +1,19 @@
+{
+  "status": "PROVISIONAL development protocol; final test locked only after review",
+  "seed": 62,
+  "planned_pairs": {
+    "development": 20,
+    "validation": 20,
+    "test": 60
+  },
+  "summary_words": [
+    80,
+    120
+  ],
+  "verification_attempts_per_enabled_stage": 1,
+  "models": null,
+  "thresholds": null,
+  "rounding_tolerances": null,
+  "analysis_plan": null,
+  "second_reviewer_confirmed": false
+}

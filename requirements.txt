@@ -1,0 +1,2 @@
+# Audit stage only. Model dependencies will be selected after hardware/schema inspection.
+ijson==3.3.0

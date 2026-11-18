@@ -1,0 +1,23 @@
+{
+  "dataset": "sciver",
+  "confirmed": false,
+  "files": {
+    "val": {
+      "path": "REPLACE_WITH_LOCAL_VALSET_JSON",
+      "prefix": "item"
+    },
+    "test": {
+      "path": "REPLACE_WITH_LOCAL_TESTSET_JSON",
+      "prefix": "item"
+    }
+  },
+  "fields": {
+    "claim": "/claim",
+    "label": "/label",
+    "paperid": "/paperid",
+    "type": "/type",
+    "claim_type": "/claim_type"
+  },
+  "label_map": {},
+  "note": "After confirming semantics, map serialized raw labels (e.g. true/false) to Supported/Refuted. No silent default."
+}

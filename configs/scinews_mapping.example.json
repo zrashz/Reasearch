@@ -1,0 +1,24 @@
+{
+  "dataset": "scinews",
+  "confirmed": false,
+  "files": {
+    "train": {
+      "path": "REPLACE_WITH_LOCAL_TRAIN_JSON",
+      "prefix": "item"
+    },
+    "val": {
+      "path": "REPLACE_WITH_LOCAL_VAL_JSON",
+      "prefix": "item"
+    },
+    "test": {
+      "path": "REPLACE_WITH_LOCAL_TEST_JSON",
+      "prefix": "item"
+    }
+  },
+  "fields": {
+    "news_text": "",
+    "paper_text": "",
+    "doi": "",
+    "paper_url": ""
+  }
+}
