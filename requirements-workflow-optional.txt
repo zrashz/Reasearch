@@ -1,0 +1,9 @@
+# ONLY needed for live-row-pilot, not status/replay/prepare-evidence.
+# Use an isolated environment if other packages require HF Hub 1.x.
+# This is a development compatibility profile, not a final experiment freeze.
+torch>=2.2
+transformers==4.57.6
+huggingface-hub==0.36.2
+tokenizers==0.22.2
+accelerate>=1,<2
+sentencepiece

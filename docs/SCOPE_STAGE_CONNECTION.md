@@ -1,0 +1,13 @@
+# Scope/correction stage connection
+
+The new source-specific decorator forwards extraction and writing to the existing backend. Recognized Table 1 MAD assertions go through the scope/value adapter. Missing benchmark context or an incorrect numeric value can receive one deterministic source-assisted replacement, which the existing stage controller rechecks. Unknown methods, missing required anchors, or unsupported assertions are withheld or forwarded to the existing backend without inventing scope. This adapter is assistant-reviewed and source-specific, not a general semantic verifier.
+
+The original controller enforces one correction attempt per claim per enabled verification stage. A claim may therefore be corrected in both independent experimental branches (raw-draft postcheck and candidate precheck); this is not multiple retries inside one stage. Originals and every check/correction remain in separate saved events.
+
+Modes:
+- replay: uses the saved model-generated claim as an externally anchored candidate, with an identity writer. No new model calls. Four V0–V3 files exercise stage routing, paired drafts, correction and recheck. It is NOT a newly generated news summary, a benchmark result or a replacement for the failed earlier abstractive writer. The single claim is shorter than 80 words and length checks must fail; no filler is added.
+- live-summary: loads existing scinews_live_v2 DevelopmentBackend and decorates it. It runs source extraction and the real writer through V0–V3 using E2. Its existing strict writer parser is retained; malformed outputs stop the run with saved metadata, and unsupported numerical assertions are withheld. The narrow MAD adapter will not verify arbitrary scientific claims. Success or failure of the live writer must be assessed from actual outputs. Model settings and backend code are recorded. No live inference was performed locally when creating this update.
+
+Existing source/evidence hashes are checked before running. Use new output directories; saved results are never overwritten. Default source-run should be the original completed train14460 model-generation run, not its correction subdirectory. Original claim anchors are explicitly prepared from the source table and scope prose, not claimed as model-generated citations.
+
+Validation: eight new tests (83 combined installed tests) pass. Actual XML/observed-claim replay was exercised with reconstructed source fixtures and verified four routes, shared draft hashes, zero new model calls and failing short-summary length flags. This does not establish summary quality, finding coverage, independent annotations, calibration, eligibility or final experimental readiness. E1/E3 live integration remains outside this source-specific E2 adapter.

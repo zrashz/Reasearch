@@ -1,0 +1,18 @@
+{
+  "train_14460_prose_010": {
+    "evidence_id": "train_14460_prose_010",
+    "modality": "prose",
+    "source_kind": "Body",
+    "section_path": [
+      "Results",
+      "Relative conformer energy"
+    ],
+    "text": "Table 1 provides mean absolute deviations (MAD) and root mean squared deviations (RMSD) for the ANI potentials and ωB97X/6-31g*, on the GDB-10to13 benchmark from the COMP625 benchmark suite. Reference values are recomputed at the CCSD(T)*/CBS level of theory. Table 1 only considers conformations within 100 kcal mol−1 of the energy minima for each molecule. The conformational energy ΔE is the energy difference between all conformers for a given molecule in the benchmark25. Methods compared are the ANI-1ccx transfer learning potential, ANI-1ccx-R trained only on coupled-cluster data, ANI-1x trained only on DFT data, and the DFT reference (ωB97X). Our analysis concludes that training a model only to the smaller CCSD(T)*/CBS data set (ANI-1ccx-R) results in a 23% degradation in RMSD compared with the transfer learning model (ANI-1ccx). The DFT trained ANI-1x model has a 36% increase in RMSD over ANI-1ccx. ANI-1ccx performs as well as the original reference (ωB97X/6-31G*) in the 100 kcal mol−1 energy range on the GDB-10to13 CCSD(T)*/CBS benchmark. Recall that each ANI model is an ensemble average over eight neural networks. Without an ensemble of networks, the MAD and RMSD of ANI models degrades by about 25%25. Supplementary Table 5 provides errors for all methods within the full energy range of the GDB-10to13 benchmark. Notably, ANI-1ccx outperforms DFT with an RMSD of 3.2 kcal mol−1 vs. 5.0 kcal mol−1 for DFT, which means the ANI-1ccx model generalizes better to high energy conformations than ωB97X/6-31G*. Supplementary Fig. 3 shows correlation plots for the ANI models vs. CCSD(T)*/CBS."
+  },
+  "train_14460_table_Tab1": {
+    "evidence_id": "train_14460_table_Tab1",
+    "modality": "table",
+    "representation": "source_table_wrap_xml",
+    "text": "<table-wrap id=\"Tab1\" position=\"float\"><label>Table 1</label><caption><p>Accuracy in predicting conformer energy differences on the GDB-10to13 benchmark</p></caption><table frame=\"hsides\" rules=\"groups\"><thead><tr><th colspan=\"1\" rowspan=\"1\" /><th colspan=\"1\" rowspan=\"1\">ANI-1ccx</th><th colspan=\"1\" rowspan=\"1\">ANI-1ccx-R</th><th colspan=\"1\" rowspan=\"1\">ANI-1x</th><th colspan=\"1\" rowspan=\"1\">ωB97X</th></tr></thead><tbody><tr><td colspan=\"1\" rowspan=\"1\">MAD<sup>a</sup></td><td colspan=\"1\" rowspan=\"1\">1.46</td><td colspan=\"1\" rowspan=\"1\">1.81</td><td colspan=\"1\" rowspan=\"1\">1.97</td><td colspan=\"1\" rowspan=\"1\">1.42</td></tr><tr><td colspan=\"1\" rowspan=\"1\">RMSD<sup>a</sup></td><td colspan=\"1\" rowspan=\"1\">2.07</td><td colspan=\"1\" rowspan=\"1\">2.54</td><td colspan=\"1\" rowspan=\"1\">2.79</td><td colspan=\"1\" rowspan=\"1\">2.04</td></tr></tbody></table><table-wrap-foot><fn id=\"_fn_p11\"><p><sup>a</sup>Units are in kcal mol<sup>−1</sup></p></fn></table-wrap-foot></table-wrap>"
+  }
+}
