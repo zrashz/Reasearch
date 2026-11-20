@@ -56,6 +56,8 @@ def main():
                     for k in required:
                         if values[k] is None or (isinstance(values[k],str) and not values[k].strip()):missing[k]+=1
                     counts[split]+=1
+                    if counts[split] % 1000 == 0:
+                        print(f"Progress: {split}: {counts[split]:,} records", flush=True)
                     import hashlib
                     raw=json.dumps(r,sort_keys=True,ensure_ascii=False).encode()
                     digest=hashlib.sha256(raw).hexdigest()
